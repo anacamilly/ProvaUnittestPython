@@ -8,7 +8,7 @@ def todosalunosMatriculados(dados):
 			resultado1 = dados[i][0]
 			a = a + 1
 		else:
-			res3b = dados[i][0]
+			resultado2 = dados[i][0]
 			b = b + 1
 	if a > b:
 		print('A turma de id =', resultado1, 'é a maior')

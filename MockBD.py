@@ -19,7 +19,7 @@ class MockBD(TestCase):
         # Aluno: id (PK), nome
         # Matricula: id (PK), id_aluno (FK), id_turma (FK)
         query_create_turma = """CREATE TABLE Turma(
-        id int NOT NULL PRIMARY KEY ,
+        id int NOT NULL PRIMARY KEY,
         nome text NOT NULL,
         turno text NOT NULL,
         id_disciplina int NOT NULL,

@@ -7,6 +7,8 @@ from questao3 import todosalunosMatriculados
 
 class TodosAlunosMatriculados(unittest.TestCase):
     def testAlunosMatric(self):
-        listTurmaAlunos = [(1, 1), (1, 2), (1, 3), (2, 1), (2, 4)]
-        self.assertEqual(todosalunosMatriculados(listTurmaAlunos), 1)
+        listTurmaAlunos1 = [(1, 1), (1, 2), (1, 3), (2, 1), (2, 4)]
+        listTurmaAlunos2 = [(1, 1), (1, 2), (2, 3), (2, 1), (2, 4)]
+        self.assertEqual(todosalunosMatriculados(listTurmaAlunos1), 1)
+        self.assertEqual(todosalunosMatriculados(listTurmaAlunos2), 2)
 

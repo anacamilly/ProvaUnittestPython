@@ -12,6 +12,6 @@ def listarAlunos(bd):
 def filtrarTurmasGeografia(bd, id_disciplina):
     return ler_bd(bd, "SELECT id FROM turma where id_disciplina=?", (id_disciplina,))
 
-# QUESTÃO 4
-def filtrarAlunosCursamGeografia(bd, id_matricula):
-    return ler_bd(bd, "SELECT id_aluno FROM matricula where id=?", (id_matricula,))
+# QUESTÃO 4 Listas todos os alunos que cursam uma turma de 'Geografia'
+def filtrarAlunosCursamGeografia(bd, id_turma):
+    return ler_bd(bd, "SELECT id_aluno FROM matricula where id_turma=?", (id_turma,))

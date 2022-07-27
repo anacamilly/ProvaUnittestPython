@@ -61,10 +61,10 @@ class MockBD(TestCase):
 
         query_insert_turma = """INSERT INTO Turma (id, nome, turno, id_disciplina)
                                 VALUES
-                                (1, 'trm1', 'manha', '1'),
-                                (2, 'trm2', 'manha', '1'),
-                                (3, 'trm3', 'tarde', '2'),
-                                (4, 'trm4', 'tarde', '2')"""
+                                (1, 'turma1', 'manha', '1'),
+                                (2, 'turma2', 'manha', '1'),
+                                (3, 'turma3', 'tarde', '2'),
+                                (4, 'turma4', 'tarde', '2')"""
 
         query_insert_aluno = """INSERT INTO Aluno (id, nome)
                                             VALUES

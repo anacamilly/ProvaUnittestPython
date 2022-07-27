@@ -8,5 +8,4 @@ from questao4 import alunosMatriculados
 class TodosAlunosMatric(unittest.TestCase):
 	def testAlunosMatriculados(self):
 		list = [(1, 1), (1 ,2), (1, 3), (2, 1), (2, 4)]
-		self.assertEqual(alunosMatriculados(1, list), [[1], [2], [3]])
-		self.assertEqual(alunosMatriculados(2, list), [[1], [4]])
+		self.assertEqual(alunosMatriculados(1, list), (False))

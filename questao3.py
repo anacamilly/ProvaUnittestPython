@@ -11,8 +11,8 @@ def todosalunosMatriculados(dados):
 			res3b = dados[i][0]
 			b = b + 1
 	if a > b:
-		print(resultado1, 'é a maior')
+		print('A turma de id =', resultado1, 'é a maior')
 		return(resultado1)
 	else:
-		print(resultado2, 'é a maior')
+		print('A turma de id =', resultado2, 'é a maior')
 		return (resultado2)
